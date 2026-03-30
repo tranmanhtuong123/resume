@@ -9,7 +9,6 @@ docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
 LaTeX template for my personal resume
 
 # Reference on
-```sh
+
 + [sb2nov/resume](https://github.com/sb2nov/resume/)
-+ [sb2nov/resume](https://github.com/jakegut/resume)
-```
++ [jakegut/resume](https://github.com/jakegut/resume)

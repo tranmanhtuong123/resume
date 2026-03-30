@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Tran Manh Tuong
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+% \usepackage[usenames,dvipsnames]{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.66\textwidth}@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.40\textwidth}@{}}
+%       \textbf{#1} & \small #2 \\
+%       \textit{\small #3} & \textit{\small #4} \\
+%     \end{tabular*}
+%     \vspace{-4pt}
+% }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.68\textwidth}@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.27\textwidth}@{}}
+      \textbf{#1} & \hspace{6pt}\small #2 \\
+      \textit{\small #3} & \hspace{6pt}\textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+% \newcommand{\resumeProjectHeading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \small#1 & #2 \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+% \newcommand{\resumeProjectHeading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       #1 & \small #2 \\
+%     \end{tabular*}
+%     \vspace{-5pt}
+% }
+
+% \newcommand{\resumeProjectHeading}[3]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & \small #2 \\
+%       \small{\textit{\textcolor{black!99}{#3}}} & \\
+%     \end{tabular*}
+%     \vspace{-5pt}
+% }
+
+% \newcommand{\resumeProjectHeading}[3]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\textcolor{black!99}{#3}} & \\
+%     \end{tabular*}
+%     \vspace{-5pt}
+% }
+
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & #2 \\
+      \multicolumn{2}{@{}l@{}}{\small\textit{\textcolor{black}{#3}}} \\
+    \end{tabular*}
+    \vspace{-3pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+
+%     \textbf{\Huge \scshape Tran Manh Tuong} \\ \vspace{1pt}
+%     \small Backend Developer \\
+%     \small +84 878 006 569 $|$ \href{mailto:tuongtran1345@gmail.com}{\underline{Mail}} $|$ 
+%     \href{https://linkedin.com/in/tuong-tm}{\underline{LinkedIn}} $|$
+%     Ho Chi Minh, Vietnam
+
+    \textbf{\Huge \scshape Tran Manh Tuong} \\ \vspace{1pt}
+    \small Backend Developer \\
+
+    \small 
+    \faPhone\ +84 878 006 569 \quad
+    \faEnvelope\ \href{mailto:tuongtran1345@gmail.com}{\underline{tuongtran1345@gmail.com}} \quad
+    \faLinkedin\ \href{https://linkedin.com/in/tuong-tm}{\underline{LinkedIn}} \quad
+    \faMapMarker*\ Ho Chi Minh, Vietnam
+
+\end{center}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {INDOVINA BANK}{May 2025 -- Present}
+      {Core Banking Developer}{Ho Chi Minh, Vietnam}
+
+    \resumeSubheading
+      {IDEA PLACE VIETNAM}{Dec 2023 -- Jan 2025}
+      {SAP Consultant}{Ho Chi Minh, Vietnam}
+
+    \resumeSubheading
+      {LCS Group (Leading in Consulting and Services)}{Oct 2022 -- Oct 2023}
+      {Java Developer}{Ho Chi Minh, Vietnam}
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Digital Banking}
+          {May 2025 -- Present}
+          {A platform for digital financial services, including transfers, payments, and account management.}
+          \resumeItemListStart           
+            \resumeItem{Designed and developed APIs for core banking transaction processing.}
+            \resumeItem{Developed APIs and stored procedures for transfers, payments, and card transactions.} 
+            \resumeItem{Implemented account lifecycle operations, including account opening, full/partial settlement, and auto-renewal.}
+            \resumeItem{Worked with Core Banking databases, gaining strong understanding of data models and transaction flows.}
+            \resumeItem{Optimized SQL queries through execution plan analysis and performance tuning.}
+            \resumeItem{Built scheduled job workflows with callback mechanisms to synchronize data between Core Banking and external systems.}
+            \resumeItem{Synchronized transaction statuses and delivered updates to applications and end users via APIs.}
+            \resumeItem{Integrated Core Banking systems with external platforms such as BDSD and OTT.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {AMS (Application Management Services)}
+          {Dec 2023 -- Jan 2025}
+          {SAP application support and development, covering system operations, user management, and ABAP enhancements.}
+          \resumeItemListStart
+            \item[] {\small \textbf{SAP BASIS:}}
+            \resumeItem{Working with Japanese clients as an SAP Consultant, supporting daily operations and system activities.}
+            \resumeItem{Gaining knowledge of user management processes, including auditing user information to ensure compliance with job requirements across various environments.}
+            \resumeItem{Experiencing in Transport Request management, including updating ChaRM statuses and importing TRs into production environments.}
+            \resumeItem{Managing OSS, including opening and tracking OSS tickets.}
+            \resumeItem{Performing audits after client copy or deletion.}
+            % \vspace{3pt} % Khoảng cách nhỏ giữa hai phần
+            \item[] {\small \textbf{ABAP Developer:}}
+            \resumeItem{Having an understanding of ABAP coding standards, including naming conventions, report programming, and best practices.}
+            \resumeItem{Applied BAPI in SAP programming to enhance functionality and automation.}
+            \resumeItem{Create Basic (changes) design document for addon ABAP programs.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {ESign Portal (ESP)}
+          {Oct 2022 -- Oct 2023}
+          {ESP is a portal that offers signature verification services for individuals and businesses.}
+          \resumeItemListStart
+            \resumeItem{Directly receiving requirements from customers, analyzing designs, and discussing with the team on how to implement and optimize features.}
+            \resumeItem{Implementing and optimizing signatures verification process.}
+            \resumeItem{Applying Docker to deploy the project on the production server.}
+            \resumeItem{Applying RabbitMQ to receive customer information, manage messages and protect the service from external threats.}
+            \resumeItem{Implementing AOP to manage information about files transferred to other microservices.}
+            \resumeItem{Tech stack: Spring Boot, Docker, RabbitMQ, RestAPI, PostgreSQL, AOP.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {Customer Relationship Management (CRM)}
+          {Mar 2023 -- Oct 2023}
+          {CRM helps agents manage customer data, departments, and call center operations.}
+          \resumeItemListStart
+            \resumeItem{Key member in designing and implementing a variety of processes.}
+            \resumeItem{Designing a database that meets the project requirements.}
+            \resumeItem{Applying Docker to deploy the project on the production server.}
+            \resumeItem{Managing departments within the company, including oversight of product quantities.}
+            \resumeItem{Implementing Socket.io to connect with the frontend for displaying pop-up customer information when receiving calls.}
+            \resumeItem{Collaborating with FE developers and designers to manage a page of phone information: aggregating missed calls, the list of outgoing and incoming phone numbers (time, status, etc.).}
+            \resumeItem{Tech stack: Spring Boot, Docker, RabbitMQ, RestAPI, MariaDB, Socket.io, Javascript, Asterisk.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+        \resumeItem{SAP Basis, SAP HANA, ABAP.}
+        \resumeItem{Java (Java 8, Spring Boot, etc.), RestAPI, Linux, HTML, CSS, Javascript.}
+        \resumeItem{Working with: Docker, RabbitMQ, Redis, Consul, Database (PostgreSQL, MySQL).}
+        \resumeItem{Handling work-related tools: Git, Sourcetree, Dbeaver, Notepad++, IntelliJ IDEA.}
+     \end{itemize}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Academic Background}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nong Lam University Ho Chi Minh City}{2018 -- 2022}
+      {Information Technology}{Ho Chi Minh, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Gained foundational knowledge of programming, data structures, OOP, and software engineering.}
+        \resumeItem{Developed soft skills: communication, teamwork, and presentation.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
