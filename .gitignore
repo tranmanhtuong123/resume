@@ -14,7 +14,7 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
-.*.pdf
+*.pdf
 
 # github action result
 semicolon_delimited_script
