@@ -61,39 +61,30 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-% \newcommand{\resumeSubheading}[4]{
-%   \vspace{-2pt}\item
-%   \begin{tabular*}{0.97\textwidth}[t]
-%   {@{}p{0.67\textwidth}@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.28\textwidth}@{}}
-  
-%     \textbf{#1} & \hspace{8pt}\small #2 \\
-%     \textit{\small #3} & \hspace{8pt}\textit{\small #4} \\
-    
-%   \end{tabular*}
-%   \vspace{-4pt}
-% }
-
-% \newcommand{\resumeProjectHeading}[2]{
-%     \item
-%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%       #1 & \small #2 \\
-%     \end{tabular*}
-%     \vspace{-5pt}
-% }
-
 \newcommand{\resumeProjectHeading}[3]{
     \item
     \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & #2 \\
       \multicolumn{2}{@{}l@{}}{\small\textit{\textcolor{black}{#3}}} \\
     \end{tabular*}
-    \vspace{-3pt}
+    \vspace{-5pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+% \newcommand{\resumeItemListStart}{\begin{itemize}[topsep=2pt, parsep=0pt, partopsep=0pt]} % Thêm topsep=2pt ở đây
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+% \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% 1. Xóa bỏ khoảng cách mặc định của danh sách để kiểm soát thủ công hoàn toàn
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=2pt]}
+
+% 2. Tách biệt khoảng cách cho tiêu đề phụ
+\newcommand{\resumeSubItemHeading}[1]{
+  \vspace{5pt} % Khoảng cách cố định phía trên mỗi tiêu đề phụ (BASIS, ABAP)
+  \item[]{\small \textbf{#1}} 
+  \vspace{2pt} % Khoảng cách từ tiêu đề phụ xuống các gạch đầu dòng bên dưới
+}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,15 +94,11 @@
 %----------HEADING----------
 \begin{center}
 
-    \textbf{\Huge \scshape Tran Manh Tuong} \\ \vspace{1pt}
-    \small Backend Developer \\ \vspace{1pt}
-    
-%     \small +84 878 006 569 $|$ \href{mailto:tuongtran1345@gmail.com}{\underline{Mail}} $|$ 
-%     \href{https://linkedin.com/in/tuong-tm}{\underline{LinkedIn}} $|$
-%     Ho Chi Minh, Vietnam
+    \textbf{\Huge \scshape Tran Manh Tuong} \\ \vspace{2pt}
+    \small Backend Developer \\ \vspace{2pt}
 
     \small 
-    \faPhone\ \href{tel:+84 878 006 569}{+84 878 006 569} \quad
+    \faPhone\ \href{tel:+84878006569}{+84 878 006 569} \quad
     \faEnvelope\ \href{mailto:tuongtran1345@gmail.com}{tuongtran1345@gmail.com} \quad
     \faLinkedin\ \href{https://linkedin.com/in/tuong-tm}{LinkedIn} \quad
     \faMapMarker*\ \href{addr:Ho Chi Minh, Vietnam}{Ho Chi Minh, Vietnam}
@@ -131,7 +118,7 @@
       {SAP Consultant}{Ho Chi Minh, Vietnam}
 
     \resumeSubheading
-      {LCS Group (Leading in Consulting and Services)}{Oct 2022 -- Oct 2023}
+      {LCS GROUP (Leading in Consulting and Services)}{Oct 2022 -- Oct 2023}
       {Java Developer}{Ho Chi Minh, Vietnam}
 
   \resumeSubHeadingListEnd
@@ -155,23 +142,23 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {AMS (Application Management Services)}
+          {Application Management Services (AMS)}
           {Dec 2023 -- Jan 2025}
           {SAP application support and development, covering system operations, user management, and ABAP enhancements.}
           \resumeItemListStart
-            \item[] {\small \textbf{SAP BASIS:}}
+            
+            \resumeSubItemHeading{SAP BASIS}
             \resumeItem{Working with Japanese clients as an SAP Consultant, supporting daily operations and system activities.}
             \resumeItem{Gaining knowledge of user management processes, including auditing user information to ensure compliance with job requirements across various environments.}
             \resumeItem{Experiencing in Transport Request management, including updating ChaRM statuses and importing TRs into production environments.}
-            \resumeItem{Managing OSS, including opening and tracking OSS tickets.}
-            \resumeItem{Performing audits after client copy or deletion.}
+            \resumeItem{Managing OSS, including opening, tracking, and resolving technical support tickets.}
+            \resumeItem{Performed post-copy and post-deletion audits for various server clients (DEV, UAT, PROD, etc.).}
 
-            % \vspace{3pt} % Khoảng cách nhỏ giữa hai phần
-
-            \item[] {\small \textbf{ABAP Developer:}}
+            \resumeSubItemHeading{ABAP Developer}
             \resumeItem{Having an understanding of ABAP coding standards, including naming conventions, report programming, and best practices.}
             \resumeItem{Applied BAPI in SAP programming to enhance functionality and automation.}
             \resumeItem{Create Basic (changes) design document for addon ABAP programs.}
+
           \resumeItemListEnd
 
       \resumeProjectHeading

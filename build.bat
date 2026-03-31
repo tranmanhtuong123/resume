@@ -1,7 +1,7 @@
 @echo off 
 
-docker build -t sb2nov/latex . 
+docker build -t tuongtm/latex . 
 
-docker run --rm -i -v %cd%:/data sb2nov/latex pdflatex tex/tuongtm_resume.tex
+docker run --rm -i -v %cd%:/data tuongtm/latex pdflatex tex/tuongtm_resume.tex
 
 pause
