@@ -1,0 +1,209 @@
+%-------------------------
+% Resume - Tran Manh Tuong (Rewritten & Reformatted)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Accent color
+\definecolor{accent}{RGB}{30, 80, 160}
+
+% Section formatting — thinner rule, accent color
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\bfseries\color{accent}
+}{}{0em}{}[\color{accent}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% ── Custom commands ──────────────────────────────────────────
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1\vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \small #2 \\
+      \textit{\small\color{accent} #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectTag}[1]{%
+  \vspace{4pt}
+  {\small\textbf{\color{accent}#1}}%
+  \vspace{-4pt}
+}
+
+\newcommand{\techStack}[1]{%
+  \vspace{1pt}
+  {\small\textit{Tech stack: #1}}%
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.22in, topsep=2pt, parsep=0pt, partopsep=0pt, itemsep=2pt]%
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+% Project sub-block
+\newenvironment{projectBlock}[2]{%
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0.22in, label={}, topsep=0pt, parsep=0pt, itemsep=0pt]
+  \item \small\textbf{#1} --- #2
+  \begin{itemize}[leftmargin=0.18in, topsep=1pt, parsep=0pt, itemsep=1pt]
+}{%
+  \end{itemize}
+  \end{itemize}
+  \vspace{-2pt}
+}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge\scshape\textbf{Tran Manh Tuong}} \\ \vspace{5pt}
+    {\small\color{accent}\textbf{Backend Developer}} \\ \vspace{5pt}
+    \small
+    \faPhone\ \href{tel:+84775682978}{+84 77 568 2978}
+    \quad\textbar\quad
+    \faEnvelope\ \href{mailto:tuongtran1345@gmail.com}{tuongtran1345@gmail.com}
+    \quad\textbar\quad
+    \faLinkedin\ \href{https://linkedin.com/in/tuong-tm}{LinkedIn}
+    \quad\textbar\quad
+    \faMapMarker*\ Ho Chi Minh, Vietnam
+\end{center}
+
+%-----------SUMMARY-----------
+% \section{Professional Summary}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%     Backend Developer with 3+ years of experience building secure, high-availability systems in \textbf{banking} and \textbf{fintech}. Hands-on expertise in \textbf{Core Banking} (CASA, Loan Lifecycle), \textbf{digital signature infrastructure} (PKI, XMLDSig, CMS/PKCS\#7), and microservices architecture. Proven ability to deliver complex integrations between Core Banking platforms and external OTT/digital channels.
+%   }}
+% \end{itemize}
+
+% \section{Summary}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%     As a programmer with 3 years of professional experience in Java, SAP, and Core Banking. I have worked on a variety of projects and gained a solid understanding of core banking system, workflows, project execution, and deployment. With a strong commitment to continuous learning and deepening my expertise, I aim to become an even more proficient programmer. I look forward to contributing to and growing with your company in the near future. 
+% }}
+% \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Banking:}{ Core Banking Systems, CASA, Loan Lifecycle.} \\
+     \textbf{SAP:}{ SAP Basis, SAP HANA, ABAP, ChaRM, OSS Management.} \\
+     \textbf{Languages/Frameworks:}{ Java (8/11/17), Spring Boot, REST API, PL/SQL, JavaScript.} \\
+     \textbf{Cloud/DevOps:}{ Linux, Docker, RabbitMQ, Redis, Consul, Microservices, Asterisk.} \\
+     \textbf{Databases:}{ Oracle (Core Banking), PostgreSQL, MySQL, MariaDB.} \\
+    %  \textbf{Tools:}{ Git, IntelliJ IDEA, Eclipse, DBeaver, Postman, VSCode.}
+    }}
+ \end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  %--- INDOVINA BANK ---
+  \resumeSubheading
+    {Indovina Bank}{May 2025 -- Present}
+    {IT - SOFTWARE ENGINEER (CORE BANKING)}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Designed and developed RESTful APIs for core banking transactions, ensuring strict data consistency, atomicity, and security compliance.}
+    \resumeItem{Developed complex Stored Procedures and automated scheduled jobs for critical operations: account opening, end-of-day settlement, and term deposit auto-renewal.}
+    \resumeItem{Built synchronization workflows integrating Core Banking with external OTT digital channels, delivering real-time transaction status updates via REST APIs.}
+    \resumeItem{Modeled Core Banking data schemas for CASA and Loan Lifecycle modules, supporting scalable transaction processing at enterprise scale.}
+  \resumeItemListEnd
+
+  % \vspace{2pt}
+  \begin{projectBlock}{Digital Banking Platform}{Core system for transfers, payments, and account management}
+    \resumeItem{Designed and maintained scheduled job workflows to synchronize transactional data between Core Banking and external OTT systems.}
+    \resumeItem{Ensured transaction integrity and consistency with real-time REST API notifications.}
+    \item \techStack{Java 17, Spring Boot, Oracle DB, PL/SQL, REST API, Docker.}
+  \end{projectBlock}
+
+  %--- IDEA PLACE VIETNAM ---
+  \resumeSubheading
+    {Idea Place Vietnam}{Dec 2023 -- Jan 2025}
+    {SAP Consultant}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Collaborated with Japanese clients on daily SAP Basis operations: user management, system monitoring, and issue resolution.}
+    \resumeItem{Managed Transport Requests (TRs) and maintained ChaRM statuses across DEV, QA, and PROD landscapes with zero unplanned downtime.}
+    \resumeItem{Developed ABAP enhancement packages and produced technical design documents for custom addon programs.}
+    \resumeItem{Handled OSS Notes analysis, application, and follow-up to keep SAP systems patched and compliant.}
+  \resumeItemListEnd
+
+  %--- LCS GROUP ---
+  \resumeSubheading
+    {LCS Group}{Oct 2022 -- Oct 2023}
+    {Java Developer}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Architected and developed ESign Portal and CRM backend services using Spring Boot and PostgreSQL, serving hundreds of concurrent users.}
+    \resumeItem{Implemented PKI infrastructure and digital signature workflows (XMLDSig, CMS/PKCS\#7), including certificate validation and cryptographic operations (AES, RSA).}
+    \resumeItem{Integrated RabbitMQ for reliable asynchronous message queuing across microservices; containerized all services with Docker.}
+    \resumeItem{Applied Aspect-Oriented Programming (AOP) for cross-cutting concerns: distributed logging, file transfer monitoring, and audit trails.}
+  \resumeItemListEnd
+
+  % \vspace{2pt}
+  \begin{projectBlock}{ESign Portal (ESP)}{Signature verification services for individuals and enterprises}
+    \resumeItem{Implemented AOP-based tracking for data transfer events across the microservices mesh.}
+    \resumeItem{Analyzed requirements and optimized the full signature verification pipeline, reducing processing latency.}
+    \item \techStack{Spring Boot, Docker, RabbitMQ, REST API, PostgreSQL, AOP.}
+  \end{projectBlock}
+
+  \begin{projectBlock}{Customer Relationship Management (CRM)}{Real-time call-center integration platform}
+    \resumeItem{Integrated Socket.io for real-time customer data pop-ups triggered on incoming calls via Asterisk VoIP.}
+    \resumeItem{Built missed-call log aggregation and inbound/outbound call status tracking in collaboration with the FE team.}
+    \item \techStack{Spring Boot, Docker, RabbitMQ, REST API, MariaDB, Socket.io, JavaScript, Asterisk.}
+  \end{projectBlock}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Nong Lam University Ho Chi Minh City}{2018 -- 2022}
+    {Bachelor of Information Technology}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Studied core Computer Science foundations: data structures, algorithms, OOP, and software engineering principles.}
+    \resumeItem{Built strong communication, teamwork, and technical presentation skills through group projects and seminars.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

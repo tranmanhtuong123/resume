@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex - Final Professional Version
+% Author: Tran Manh Tuong
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \small #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & \small #2 \\
+      \multicolumn{2}{@{}l@{}}{\small\textit{\textcolor{black}{#3}}} \\
+    \end{tabular*}
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Tran Manh Tuong} \\ \vspace{5pt}
+    \small \faBriefcase\ Backend Developer \\ \vspace{3pt}
+    \small 
+    \faPhone\ +84 77 568 2978 \quad | \quad 
+    \faEnvelope\ \href{mailto:tuongtran1345@gmail.com}{tuongtran1345@gmail.com} \quad | \quad 
+    \faLinkedin\ \href{https://linkedin.com/in/tuong-tm}{LinkedIn} \quad | \quad 
+    \faMapMarker*\ Ho Chi Minh, Vietnam
+\end{center}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Banking:}{ Core Banking Systems, CASA, Loan Lifecycle.} \\
+     \textbf{SAP:}{ SAP Basis, SAP HANA, ABAP, ChaRM, OSS Management.} \\
+     \textbf{Languages/Frameworks:}{ Java (8/11/17), Spring Boot, REST API, PL/SQL, JavaScript.} \\
+     \textbf{Cloud/DevOps:}{ Linux, Docker, RabbitMQ, Redis, Consul, Microservices, Asterisk.} \\
+     \textbf{Databases:}{ Oracle (Core Banking), PostgreSQL, MySQL, MariaDB.} \\
+     \textbf{Tools:}{ Git, IntelliJ IDEA, Eclipse, DBeaver, Postman, VSCode.}
+    }}
+ \end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {INDOVINA BANK}{May 2025 -- Present}
+      {IT - SOFTWARE ENGINEER (CORE BANKING)}{Ho Chi Minh, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Gained hands-on experience in core banking systems, with a strong understanding of Current Accounts, CASA, and end-to-end Loan Lifecycle workflows.}
+        \resumeItem{Designed and developed RESTful APIs for processing core banking transactions, ensuring high data consistency and security.}
+        \resumeItem{Gained deep expertise in Core Banking data models and transaction flows to design scalable database schemas.}
+        \resumeItem{Developed complex Stored Procedures and automated jobs for critical banking operations: account opening, settlement, and auto-renewal.}
+        \resumeItem{Built robust synchronization workflows between Core Banking and external OTT platforms, ensuring seamless transaction status updates via APIs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IDEA PLACE VIETNAM}{Dec 2023 -- Jan 2025}
+      {SAP Consultant}{Ho Chi Minh, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Working with Japanese clients, supporting daily SAP operations and user management.}
+        \resumeItem{Managed Transport Requests (TRs) and updated ChaRM statuses in PROD environments.}
+        \resumeItem{Developed ABAP enhancements and created design documents for addon programs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LCS GROUP}{Oct 2022 -- Oct 2023}
+      {Java Developer}{Ho Chi Minh, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Developed ESign Portal and CRM systems using Spring Boot and PostgreSQL, focusing on secure document handling.}
+        \resumeItem{Gained deep expertise in Cryptography, including symmetric/asymmetric encryption (AES, RSA) and decryption processes for sensitive data protection.}
+        \resumeItem{Implemented and managed various Digital Signature standards (XMLDSig, CMS/PKCS\#7) and PKI (Public Key Infrastructure) workflows.}
+        \resumeItem{Integrated RabbitMQ for asynchronous message queuing and utilized Docker for consistent containerized deployments.}
+        \resumeItem{Applied Aspect-Oriented Programming (AOP) to streamline logging and file transfer monitoring across microservices.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {LCS GROUP}{Oct 2022 -- Oct 2023}
+    %   {Java Developer}{Ho Chi Minh, Vietnam}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed ESign Portal and CRM systems using Spring Boot, PostgreSQL, and RabbitMQ, focusing on robust security layers for sensitive document management.}
+    %     \resumeItem{Mastered cryptographic workflows (AES, RSA) and Digital Signature standards (XMLDSig, CMS/PKCS\#7) within PKI frameworks to ensure end-to-end data protection.}
+    %     \resumeItem{Utilized Docker for containerized deployment and applied AOP to streamline logging and file transfer monitoring across microservices architecture.}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Digital Banking Platform}
+          {May 2025 -- Present}
+          {Core system for transfers, payments, and account management}
+          \resumeItemListStart           
+            \resumeItem{Built scheduled job workflows to synchronize data between Core Banking and external OTT systems.}
+            \resumeItem{Ensured transaction integrity and delivered real-time updates via REST APIs.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {ESign Portal (ESP)}
+          {Oct 2022 -- Oct 2023}
+          {Signature verification services for individuals and businesses}
+          \resumeItemListStart
+            \resumeItem{Implemented AOP for tracking data transfers across microservices architecture.}
+            \resumeItem{Analyzed requirements and optimized signature verification workflows.}
+          \resumeItemListEnd    
+
+      \resumeProjectHeading
+          {Customer Relationship Management (CRM)}
+          {Mar 2023 -- Oct 2023}
+          {Omnichannel CRM for call center operations and data management}
+          \resumeItemListStart
+            \resumeItem{Implemented Socket.io for real-time customer data pop-ups during incoming calls.}
+            \resumeItem{Collaborated with FE team to aggregate missed call logs and incoming/outgoing call status tracking.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nong Lam University Ho Chi Minh City}{2018 -- 2022}
+      {Bachelor of Information Technology}{Ho Chi Minh, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Gained foundational knowledge of programming, data structures, OOP, and software engineering.}
+        \resumeItem{Developed soft skills: communication, teamwork, and presentation.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
