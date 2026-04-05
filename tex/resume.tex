@@ -1,0 +1,198 @@
+%-------------------------
+% Resume - Tran Manh Tuong (Rewritten & Reformatted)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Accent color
+\definecolor{accent}{RGB}{30, 80, 160}
+
+% Section formatting — thinner rule, accent color
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\bfseries\color{accent}
+}{}{0em}{}[\color{accent}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% ── Custom commands ──────────────────────────────────────────
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1\vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \small #2 \\
+      \textit{\small\color{accent} #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectTag}[1]{%
+  \vspace{4pt}
+  {\small\textbf{\color{accent}#1}}%
+  \vspace{-4pt}
+}
+
+\newcommand{\techStack}[1]{%
+  \vspace{1pt}
+  {\small\textit{Tech stack: #1}}%
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.22in, topsep=2pt, parsep=0pt, partopsep=0pt, itemsep=2pt]%
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+% Project sub-block
+\newenvironment{projectBlock}[2]{%
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0.22in, label={}, topsep=0pt, parsep=0pt, itemsep=0pt]
+  \item \small\textbf{#1} --- #2
+  \begin{itemize}[leftmargin=0.18in, topsep=1pt, parsep=0pt, itemsep=1pt]
+}{%
+  \end{itemize}
+  \end{itemize}
+  \vspace{-2pt}
+}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge\scshape\textbf{Tran Manh Tuong}} \\ \vspace{5pt}
+    {\small\color{accent}\textbf{Backend Developer | Core Banking \& Fintech Specialist}} \\ \vspace{5pt}
+    \small
+    \faPhone\ \href{tel:+84775682978}{+84 77 568 2978}
+    \quad\textbar\quad
+    \faEnvelope\ \href{mailto:tuongtran1345@gmail.com}{tuongtran1345@gmail.com}
+    \quad\textbar\quad
+    \faLinkedin\ \href{https://linkedin.com/in/tuong-tm}{LinkedIn}
+    \quad\textbar\quad
+    \faMapMarker*\ Ho Chi Minh, Vietnam
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Banking:}{ Core Banking Systems (CASA, Loan Lifecycle), Payment Processing, Settlement, PKI/Digital Signature.} \\
+     \textbf{SAP:}{ SAP Basis, SAP HANA, ABAP Development, ChaRM, OSS Management, System Administration.} \\
+     \textbf{Languages/Frameworks:}{ Java (8/11/17), Spring Boot, REST API, PL/SQL, JavaScript, ABAP.} \\
+     \textbf{Cloud/DevOps:}{ Linux, Docker, Docker Compose, RabbitMQ, Redis, Consul, Microservices, Asterisk VoIP.} \\
+     \textbf{Databases:}{ Oracle (Core Banking Systems), PostgreSQL, MySQL, MariaDB.} \\
+     \textbf{Security/Cryptography:}{ PKI Infrastructure, XMLDSig, CMS/PKCS\#7, AES, RSA, Certificate Management.}
+    }}
+ \end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  %--- INDOVINA BANK ---
+  \resumeSubheading
+    {Indovina Bank}{May 2025 -- Present}
+    {Core Banking Developer}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Architected and implemented high-performance RESTful APIs for mission-critical banking transactions (transfers, deposits, withdrawals) with strict ACID compliance, multi-layer security validation, and transaction integrity ensuring zero data loss.}
+    \resumeItem{Designed and deployed complex PL/SQL Stored Procedures and Oracle-scheduled jobs for account opening automation and term deposit auto-renewal processes handling 10,000+ daily transactions with 99.95\% accuracy.}
+    \resumeItem{Modeled enterprise-scale CASA (Current Account Savings Account) and Loan Lifecycle data schemas supporting complex business rules, regulatory compliance (Vietnamese banking standards), and scalable high-throughput transaction processing.}
+  \resumeItemListEnd
+
+  % \vspace{2pt}
+  \begin{projectBlock}{Digital Banking}{Real-time transaction processing, account management, and OTT channel integration}
+    % \resumeItem{Engineered real-time synchronization workflows bridging Core Banking systems with external OTT (Over-The-Top) digital channels, delivering sub-second transaction status updates through REST APIs with event-driven architecture and message queue orchestration.}
+    % \resumeItem{Designed automated scheduled job workflows synchronizing transactional data with sub-second latency between Core Banking and OTT systems; achieved 99.9\% uptime SLA and zero unplanned downtime.}
+    \resumeItem{Designed real-time synchronization workflows bridging Core Banking with external OTT digital channels via event-driven architecture and message queuing; delivered sub-second transaction status updates through REST APIs with 99.9\% uptime SLA and zero unplanned downtime.}
+    \resumeItem{Implemented distributed transaction logging and audit trails for compliance with banking regulations; integrated with centralized logging stack for real-time monitoring and forensic analysis.}
+    \item \techStack{Java 17, Spring Boot, Oracle DB, PL/SQL, REST API, Docker, Linux, Event-Driven Architecture.}
+  \end{projectBlock}
+
+  %--- IDEA PLACE VIETNAM ---
+  \resumeSubheading
+    {Idea Place Vietnam}{Dec 2023 -- Jan 2025}
+    {SAP Basis Consultant}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Managed end-to-end SAP infrastructure operations for Japanese multinational clients: system monitoring, user lifecycle management, performance tuning, and 24/7 incident resolution with 99.95\% system availability.}
+    \resumeItem{Orchestrated Transport Request (TR) management and ChaRM status coordination across DEV, QA, and PROD landscapes; executed 150+ monthly system transports with zero unplanned downtime.}
+    \resumeItem{Developed ABAP enhancements and custom solutions for client-specific requirements; produced comprehensive technical design documents (TDD) and implementation guides for addon programs.}
+    \resumeItem{Analyzed and applied 50+ SAP OSS Notes; maintained system patch compliance and security standards; conducted quarterly system health checks and capacity planning reviews.}
+  \resumeItemListEnd
+
+  %--- LCS GROUP ---
+  \resumeSubheading
+    {LCS Group}{Oct 2022 -- Oct 2023}
+    {Java Backend Developer}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Architected and built two enterprise microservices from ground-up (ESign Portal \& CRM platform) using Spring Boot and PostgreSQL, serving 500+ concurrent users with sub-100ms response times; designed and deployed RabbitMQ-based asynchronous message queuing architecture supporting 1000+ events/sec and containerized all services with Docker ensuring consistent dev-to-prod deployments.}
+    \resumeItem{Integrated Socket.io for real-time customer data pop-ups triggered by incoming calls via Asterisk PBX, coupled with comprehensive missed-call aggregation and call status tracking (inbound/outbound) with MySQL persistence; reduced agent lookup time from 30s to 2s while handling 500+ concurrent calls with 99\% data accuracy.}
+  \resumeItemListEnd
+
+  % \vspace{2pt}
+  \begin{projectBlock}{ESign Portal (ESP)}{Enterprise digital signature verification and certificate validation platform}
+    \resumeItem{Engineered AOP-based event tracking system capturing all data transfer operations across microservices mesh; reduced debugging time by 60\% through detailed transaction tracing.}
+    \resumeItem{Optimized signature verification pipeline through database query optimization and caching strategies; reduced average processing latency from 5s to 1.2s (76\% improvement).}
+    \resumeItem{Implemented certificate lifecycle management, revocation checking, and PKI validation workflows compliant with Vietnamese digital signature standards.}
+    \item \techStack{Spring Boot, Docker, RabbitMQ, PostgreSQL, REST API, AOP, XML Security.}
+  \end{projectBlock}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Nong Lam University Ho Chi Minh City}{2018 -- 2022}
+    {Bachelor of Information Technology}{Ho Chi Minh, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Studied core Computer Science foundations: data structures, algorithms, object-oriented programming (OOP), and software engineering principles.}
+    \resumeItem{Developed strong problem-solving and technical communication skills through capstone projects, group work, and technical presentations.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% %-----------CERTIFICATIONS & AWARDS-----------
+% \section{Certifications \& Awards}
+
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%     \textbf{Professional Certifications:}{ [Add your certifications — Example: Oracle Database Administrator (OCA), AWS Solutions Architect Associate, Kubernetes Administrator (CKA), SAP Basis, etc.]} \\
+%     \textbf{Recognition \& Awards:}{ [Add your awards — Example: Employee of the Month (Q2 2024), Performance Excellence Award, Outstanding Performance Recognition, etc.]}
+%   }}
+% \end{itemize}
+
+\end{document}

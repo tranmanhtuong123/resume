@@ -126,12 +126,12 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Banking:}{ Core Banking Systems, CASA, Loan Lifecycle.} \\
+     \textbf{Banking:}{ Core Banking Systems, CASA, Loan Lifecycle, Payment Processing.} \\
      \textbf{SAP:}{ SAP Basis, SAP HANA, ABAP, ChaRM, OSS Management.} \\
      \textbf{Languages/Frameworks:}{ Java (8/11/17), Spring Boot, REST API, PL/SQL, JavaScript.} \\
-     \textbf{Cloud/DevOps:}{ Linux, Docker, RabbitMQ, Redis, Consul, Microservices, Asterisk.} \\
+     \textbf{Cloud/DevOps:}{ Linux, Docker, RabbitMQ, Redis, Consul, Microservices, Asterisk VoIP.} \\
      \textbf{Databases:}{ Oracle (Core Banking), PostgreSQL, MySQL, MariaDB.} \\
-    %  \textbf{Tools:}{ Git, IntelliJ IDEA, Eclipse, DBeaver, Postman, VSCode.}
+     \textbf{Cryptography:}{ PKI Infrastructure, XMLDSig, CMS/PKCS\#7, AES, RSA.}
     }}
  \end{itemize}
 
@@ -142,19 +142,20 @@
   %--- INDOVINA BANK ---
   \resumeSubheading
     {Indovina Bank}{May 2025 -- Present}
-    {IT - SOFTWARE ENGINEER (CORE BANKING)}{Ho Chi Minh, Vietnam}
+    {IT - Software Engineer (Core Banking)}{Ho Chi Minh, Vietnam}
   \resumeItemListStart
-    \resumeItem{Designed and developed RESTful APIs for core banking transactions, ensuring strict data consistency, atomicity, and security compliance.}
-    \resumeItem{Developed complex Stored Procedures and automated scheduled jobs for critical operations: account opening, end-of-day settlement, and term deposit auto-renewal.}
-    \resumeItem{Built synchronization workflows integrating Core Banking with external OTT digital channels, delivering real-time transaction status updates via REST APIs.}
-    \resumeItem{Modeled Core Banking data schemas for CASA and Loan Lifecycle modules, supporting scalable transaction processing at enterprise scale.}
+    % \resumeItem{Designed and developed high-performance RESTful APIs for mission-critical banking transactions with strict ACID compliance, multi-layer security validation, and zero data loss assurance.}
+    \resumeItem{Designed and developed high-performance RESTful APIs supporting high-value financial transactions with strict ACID compliance and robust security validation, ensuring reliable and consistent transaction processing.}
+    \resumeItem{Developed complex Stored Procedures and automated scheduled jobs for account opening automation and term deposit auto-renewal, processing nearly 10,000 daily transactions with 99.95\% accuracy.}
+    % \resumeItem{Modeled enterprise-scale CASA and Loan Lifecycle data schemas supporting complex business rules and regulatory compliance at scale.}
+    \resumeItem{Designed enterprise-scale CASA and Loan Lifecycle data models supporting complex business rules and regulatory compliance, ensuring data consistency and scalability.}
   \resumeItemListEnd
 
-  % \vspace{2pt}
-  \begin{projectBlock}{Digital Banking Platform}{Core system for transfers, payments, and account management}
-    \resumeItem{Designed and maintained scheduled job workflows to synchronize transactional data between Core Banking and external OTT systems.}
-    \resumeItem{Ensured transaction integrity and consistency with real-time REST API notifications.}
-    \item \techStack{Java 17, Spring Boot, Oracle DB, PL/SQL, REST API, Docker.}
+  \begin{projectBlock}{Digital Banking}{Core system for transfers, payments, and OTT channel integration}
+    % \resumeItem{Designed real-time synchronization workflows bridging Core Banking with external OTT digital channels via event-driven architecture; delivered sub-second transaction status updates with 99.9\% uptime SLA.}
+    \resumeItem{Designed real-time synchronization workflows bridging Core Banking with external OTT digital channels via event-driven architecture; delivered sub-second transaction status updates with 99.9\% uptime SLA, improving real-time transaction visibility.}
+    \resumeItem{Implemented distributed transaction logging and audit trails for regulatory compliance; integrated centralized logging for real-time monitoring.}
+    \item \techStack{Java 17, Spring Boot, Oracle DB, PL/SQL, REST API, Docker, Linux.}
   \end{projectBlock}
 
   %--- IDEA PLACE VIETNAM ---
@@ -162,10 +163,11 @@
     {Idea Place Vietnam}{Dec 2023 -- Jan 2025}
     {SAP Consultant}{Ho Chi Minh, Vietnam}
   \resumeItemListStart
-    \resumeItem{Collaborated with Japanese clients on daily SAP Basis operations: user management, system monitoring, and issue resolution.}
-    \resumeItem{Managed Transport Requests (TRs) and maintained ChaRM statuses across DEV, QA, and PROD landscapes with zero unplanned downtime.}
-    \resumeItem{Developed ABAP enhancement packages and produced technical design documents for custom addon programs.}
-    \resumeItem{Handled OSS Notes analysis, application, and follow-up to keep SAP systems patched and compliant.}
+    \resumeItem{Collaborated with Japanese clients on SAP Basis operations: user management, system monitoring, and incident resolution with 99.95\% system availability.}
+    % \resumeItem{Managed Transport Requests and maintained ChaRM statuses across DEV, QA, and PROD landscapes; executed 150+ transports with zero unplanned downtime.}
+    \resumeItem{Managed Transport Requests and maintained ChaRM statuses across DEV, QA, and PROD landscapes; ensuring stable releases across environments with zero critical production incidents.}
+    % \resumeItem{Developed ABAP enhancement packages and technical design documents for custom addon programs; analyzed and applied 50+ SAP OSS Notes.}
+    \resumeItem{Developed ABAP enhancement packages and technical design documents for custom addon programs.}
   \resumeItemListEnd
 
   %--- LCS GROUP ---
@@ -173,26 +175,21 @@
     {LCS Group}{Oct 2022 -- Oct 2023}
     {Java Developer}{Ho Chi Minh, Vietnam}
   \resumeItemListStart
-    \resumeItem{Architected and developed ESign Portal and CRM backend services using Spring Boot and PostgreSQL, serving hundreds of concurrent users.}
-    \resumeItem{Implemented PKI infrastructure and digital signature workflows (XMLDSig, CMS/PKCS\#7), including certificate validation and cryptographic operations (AES, RSA).}
-    \resumeItem{Integrated RabbitMQ for reliable asynchronous message queuing across microservices; containerized all services with Docker.}
-    \resumeItem{Applied Aspect-Oriented Programming (AOP) for cross-cutting concerns: distributed logging, file transfer monitoring, and audit trails.}
+    % \resumeItem{Architected and built two enterprise microservices (ESign Portal \& CRM) using Spring Boot and PostgreSQL, serving 500+ concurrent users with sub-100ms response; designed RabbitMQ message queuing supporting 1000+ events/sec and containerized with Docker.}
+    \resumeItem{Architected and built two enterprise microservices (ESign Portal \& CRM) using Spring Boot and PostgreSQL, designed RabbitMQ message queuing supporting 1000+ events/sec and containerized with Docker.}
+    \resumeItem{Implemented PKI infrastructure and digital signature workflows (XMLDSig, CMS/PKCS\#7) with cryptographic operations (AES, RSA) and security audit compliance.}
+    \resumeItem{Integrated Socket.io for real-time customer data in CRM platform triggered by incoming calls via Asterisk PBX; reduced agent lookup time from 30s to 2s while handling 500+ concurrent calls with 99\% accuracy.}
   \resumeItemListEnd
 
-  % \vspace{2pt}
-  \begin{projectBlock}{ESign Portal (ESP)}{Signature verification services for individuals and enterprises}
-    \resumeItem{Implemented AOP-based tracking for data transfer events across the microservices mesh.}
-    \resumeItem{Analyzed requirements and optimized the full signature verification pipeline, reducing processing latency.}
-    \item \techStack{Spring Boot, Docker, RabbitMQ, REST API, PostgreSQL, AOP.}
-  \end{projectBlock}
-
-  \begin{projectBlock}{Customer Relationship Management (CRM)}{Real-time call-center integration platform}
-    \resumeItem{Integrated Socket.io for real-time customer data pop-ups triggered on incoming calls via Asterisk VoIP.}
-    \resumeItem{Built missed-call log aggregation and inbound/outbound call status tracking in collaboration with the FE team.}
-    \item \techStack{Spring Boot, Docker, RabbitMQ, REST API, MariaDB, Socket.io, JavaScript, Asterisk.}
+  \begin{projectBlock}{ESign Portal (ESP)}{Enterprise digital signature verification platform}
+    \resumeItem{Implemented AOP-based event tracking for data transfer operations; reduced debugging time by 60\% and optimized signature verification pipeline reducing latency by 76\% (5s to 1.2s).}
+    \resumeItem{Implemented certificate lifecycle management and PKI validation workflows compliant with Vietnamese digital signature standards.}
+    \item \techStack{Spring Boot, Docker, RabbitMQ, PostgreSQL, REST API, AOP, XML Security.}
   \end{projectBlock}
 
 \resumeSubHeadingListEnd
+
+\newpage
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -202,7 +199,7 @@
     {Bachelor of Information Technology}{Ho Chi Minh, Vietnam}
   \resumeItemListStart
     \resumeItem{Studied core Computer Science foundations: data structures, algorithms, OOP, and software engineering principles.}
-    \resumeItem{Built strong communication, teamwork, and technical presentation skills through group projects and seminars.}
+    \resumeItem{Developed strong communication, teamwork, and technical presentation skills through group projects and seminars.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
