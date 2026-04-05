@@ -8,6 +8,6 @@ docker build -t tuongtm/latex .
 
 @REM docker run --rm -i -v %cd%:/data tuongtm/latex pdflatex tex/resume.tex
 
-docker run --rm -i -v %cd%:/data tuongtm/latex pdflatex tex/TranManhTuong-BankednDeveloper.tex
+docker run --rm -i -v %cd%:/data tuongtm/latex pdflatex tex/tuongtm_resume.tex
 
 pause
